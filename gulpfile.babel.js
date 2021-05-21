@@ -62,7 +62,7 @@ export function copyHTML() {
 export function ejs() {
     return src([paths.ejs.src, paths.ejs.temp])
         .pipe($.ejs({
-            msg: 'Hello EJS！',
+            msg: 'Hello EJS！ from gulpfile.babel.js',
         }))
         .pipe($.rename({ extname: '.html' }))
         .pipe(dest(paths.ejs.dest))

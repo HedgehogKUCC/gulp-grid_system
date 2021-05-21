@@ -1,5 +1,3 @@
-const newFun2 = () => {
-    debugger;
-};
+const newFun2 = () => {};
 
 newFun2();
