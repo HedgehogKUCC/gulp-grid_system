@@ -92,3 +92,8 @@
 
 - `.offset-[ 1-11 ]`
 - `.offset-[ sm | md | lg | xl ]-[ 0-11 ]`
+
+### display
+
+- `d-[ none | block | flex ]`
+- `d-[ sm | md | lg | xl ]-[ none | block | flex ]`
