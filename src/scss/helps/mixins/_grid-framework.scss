@@ -9,15 +9,20 @@
 
     @each $breakpoint in map-keys($breakpoints) {
         $infix: breakpoint-infix($breakpoint, $breakpoints);
+        // @debug "infix : #{$infix}";
 
         // Allow columns to stretch full width below their breakpoints
         @for $i from 1 through $columns {
             .col#{$infix}-#{$i} {
                 @extend %grid-column;
             }
+            // @debug "for 1 through $columns : #{col#{$infix}-#{$i}}";
         }
-        .col#{$infix},
-        .col#{$infix}-auto {
+        //.col#{$infix},
+        //.col#{$infix}-auto {
+        //    @extend %grid-column;
+        //}
+        .col#{$infix} {
             @extend %grid-column;
         }
 
@@ -29,15 +34,15 @@
                 max-width: 100%;
             }
 
-            @for $i from 1 through $grid-row-columns {
-                .row-cols#{$infix}-#{$i} {
-                    @include row-cols($i);
-                }
-            }
+            //@for $i from 1 through $grid-row-columns {
+            //    .row-cols#{$infix}-#{$i} {
+            //        @include row-cols($i);
+            //    }
+            //}
 
-            .col#{$infix}-auto {
-                @include make-col-auto();
-            }
+            //.col#{$infix}-auto {
+            //    @include make-col-auto();
+            //}
 
             @for $i from 1 through $columns {
                 .col#{$infix}-#{$i} {

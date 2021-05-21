@@ -14,10 +14,6 @@
             @content;
         }
     } @else {
-        /* @content; */
-
-        @media (min-width: $name) {
-            @content;
-        }
+        @content;
     }
 }

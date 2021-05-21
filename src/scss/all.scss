@@ -4,17 +4,3 @@
 @import "helps/mixins/grid-framework";
 @import "helps/mixins/grid";
 @import "helps/grid";
-
-@include media-breakpoint-up(414px) {
-    .test {
-        color: red;
-    }
-}
-
-$base-color: #036;
-
-@for $i from 1 to 3 {
-    ul:nth-child(3n + #{$i}) {
-        background-color: lighten($base-color, $i * 5%);
-    }
-}
