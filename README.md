@@ -97,3 +97,21 @@
 
 - `d-[ none | block | flex ]`
 - `d-[ sm | md | lg | xl ]-[ none | block | flex ]`
+
+---
+
+<br>
+
+## Gulp
+
+### dev
+
+```bash
+$ gulp
+```
+
+### build
+
+```bash
+$ gulp build --env production
+```
